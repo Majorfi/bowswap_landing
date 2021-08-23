@@ -1,12 +1,5 @@
 import	React	from	'react';
 
-function parseMarkdown(markdownText) {
-	const htmlText = markdownText
-		.replace(/\[(.*?)\]\((.*?)\)/gim, "<a class='hover:text-blue-400 hover:underline transition-colors' target='_blank' href='$2'>$1</a>");
-
-	return htmlText.trim();
-}
-
 function	Credits() {
 	return (
 		<nav className={'w-full h-16 p-6 justify-center flex flex-row absolute bottom-0 z-20'}>
